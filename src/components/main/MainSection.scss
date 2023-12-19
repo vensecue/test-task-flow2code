@@ -1,0 +1,174 @@
+@import '../variables.scss';
+
+@font-face {
+    font-family: 'SohoGothicPro-Medium';
+    src: url('../../../public/SohoGothicPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SohoGothicPro-Regular';
+    src: url('../../../public/SohoGothicPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main-section {
+    text-align: left;
+    padding: 20px;
+    padding-left: 5vw;
+    font-family: 'SohoGothicPro-Regular', sans-serif;
+    
+    @media (min-width: $desktop-resolution) {
+        padding-left: 20vw;
+    }
+  }
+  
+  .logo {
+    width: 40%;
+    height: auto;
+    padding-top: 15px;
+  
+    @media (min-width: $desktop-resolution) {
+      width: 20%;
+      padding-top: 55px;
+    }
+  }
+  
+
+  .dot {
+    color: $primary-orange;
+  }
+
+  .subscribe-text {
+    color: $primary-blue;
+    font-size: 51px;
+    font-weight: bold;
+    font-family: 'SohoGothicPro-Regular', sans-serif;
+    margin-bottom: -40px;
+  
+    @media (min-width: $desktop-resolution) {
+      font-size: 65px;
+      margin-bottom: -10px;
+  
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: $desktop-resolution) {
+      margin-top: 10px;
+      font-size: 45px;
+    }
+  }
+  
+  .linkedin-profile {
+    margin-top: 40px;
+    color: $primary-blue;
+    display: flex;
+    align-items: center;
+  
+    @media (min-width: $desktop-resolution) {
+      font-size: 23px;
+    }
+  
+    a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+  
+    .icon {
+      width: 25px;
+      height: 25px;
+      margin-left: 5px;
+      padding-right: 10px;
+  
+      @media (min-width: $desktop-resolution) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  
+  .announcement-section {
+    font-family: 'SohoGothicPro-Regular', sans-serif;
+    color: $primary-blue;
+    @media (min-width: $desktop-resolution) {
+      font-size: 36px;
+      padding-top: 100px;
+    }
+    @media (max-width: $desktop-resolution) {
+      font-size: 24px;
+      padding-top: 20px;
+    }
+  }
+  
+  .availability {
+    font-size: 14px;
+    margin-top: 10px;
+    color: $primary-blue;
+    @media (min-width: $desktop-resolution) {
+      font-size: 25px;
+    }
+    @media (max-width: $desktop-resolution) {
+      font-size: 16.5px;
+    }
+  }
+  
+  .contact-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-blue;
+  }
+  
+  .contact-info {
+    flex: 1;
+    text-align: left;
+    color: $primary-blue;
+    padding-top: 30px;
+    @media (max-width: $desktop-resolution) {
+      padding-top: 0px;
+    }
+  }
+
+  .company-info {
+    flex: 1;
+    text-align: left;
+    color: $primary-blue;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left {
+    margin-bottom: 10px;
+    color: $primary-blue;
+    font-family: 'SohoGothicPro-Medium', sans-serif;
+    font-size: 26px;
+    flex: 1;
+    @media (max-width: $desktop-resolution) {
+      font-size: 16.5px;
+    }
+    @media (min-width: $desktop-resolution) {
+      br {
+        display: none;
+      }
+    }
+  }
+  
+  .right {
+    margin-bottom: 10px;
+    font-family: 'SohoGothicPro-Regular', sans-serif;
+    color: $primary-blue;
+    font-size: 26px;
+    flex: 1.5;
+    @media (max-width: $desktop-resolution) {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+@import '../variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .photo {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    position: relative;
+  
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  
+  .photo1 {
+    background-image: url('../../../public/img1.png');
+  }
+  
+  .photo2 {
+    background-image: url('../../../public/img2.png');
+  }
+  
+  .photo3 {
+    background-image: url('../../../public/img3.png');
+  }
+  
+  .color-box {
+    flex: 1;
+    position: relative;
+  
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  
+  .darkblue {
+    background-color: $primary-blue;
+  }
+  
+  .orange {
+    background-color: $primary-orange;
+  }
+  
+  @media (max-width: 768px) {
+    .photo {
+      width: 100%;
+    }
+  
+    .photo:last-child {
+      display: none;
+    }
+  }
+  
